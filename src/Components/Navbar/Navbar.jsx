@@ -6,7 +6,7 @@ import { Link } from "wouter";
 
 const Navbar = () => {
   return (
-    <Stack py={{ base: 4, md: 2 }} px={{ base: 2, md: "10" }} bg="ml.yellow">
+    <Stack py={{ base: 4, md: 2 }} px={{ base: 2, md: "10" }} bg="ml.yellow" w='full'>
       <Stack
         direction="row"
         alignItems="center"

@@ -1,15 +1,12 @@
 import { Container, Stack } from "@chakra-ui/react";
-import { OptionPay } from "./Components/Header/OptionPay";
-import Navbar from "./Components/Navbar/Navbar";
+import { OptionPay } from "./Pages";
+import Navbar from "./Components";
 
 const App = () => {
   return (
-    <Stack margin="0 auto" bg="lightGrey">
-      App
+    <Stack margin="0 auto" bg="lightGrey" alignItems='center'>
       <Navbar />
-      <Container maxW='1200px' centerContent>
       <OptionPay />
-      </Container>
     </Stack>
   );
 };
