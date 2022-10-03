@@ -1,12 +1,12 @@
 import { Container, Stack } from "@chakra-ui/react";
-import { OptionPay } from "./Pages";
-import Navbar from "./Components";
+import { Navbar } from "./Components";
+import { Header } from "./Pages/Home";
 
 const App = () => {
   return (
-    <Stack margin="0 auto" bg="lightGrey" alignItems='center'>
+    <Stack margin="0 auto" bg="lightGrey" alignItems="center">
       <Navbar />
-      <OptionPay />
+      <Header />
     </Stack>
   );
 };

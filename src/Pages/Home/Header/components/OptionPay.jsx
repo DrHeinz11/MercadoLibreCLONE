@@ -1,10 +1,10 @@
 import { Stack, StackDivider, Image, Grid } from "@chakra-ui/react";
 import PayCard from "./PayCard";
 import { Link } from "wouter";
-import PlusIcon from "../../../assets/PlusIcon.svg";
-import { optionPay } from "../../../Constant";
+import PlusIcon from "../../../../assets/PlusIcon.svg";
+import { optionPay } from "../../../../Constant";
 
-export const OptionPay = () => {
+const OptionPay = () => {
   return (
     <Stack
       gap={{ base: 0, md: "4" }}
@@ -16,7 +16,7 @@ export const OptionPay = () => {
       borderRadius="md"
       boxShadow="md"
       bg="#fafafa"
-      margin={"0 auto"}
+      margin={"4rem auto"}
       justify={"space-between"}
       alignItems="center"
     >
@@ -39,3 +39,5 @@ export const OptionPay = () => {
     </Stack>
   );
 };
+
+export default OptionPay;
