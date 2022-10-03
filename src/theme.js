@@ -12,6 +12,7 @@ const theme = extendTheme({
       greyBg: "#efefef",
       greyAlpha: "#6c6a6a",
       blue: "#3483fa",
+      green: "#00a650",
     },
   },
 });

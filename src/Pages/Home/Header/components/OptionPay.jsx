@@ -12,7 +12,7 @@ const OptionPay = () => {
       py={1}
       px={4}
       w="full"
-      maxW="70rem"
+      maxW="78rem"
       borderRadius="md"
       boxShadow="md"
       bg="#fafafa"
@@ -22,6 +22,8 @@ const OptionPay = () => {
     >
       <Grid
         w="full"
+        h={{ base: "175px", sm: "auto" }}
+        overflow="hidden"
         gridTemplateColumns={"repeat(auto-fill,minmax(225px,1fr))"}
       >
         {optionPay.map((element) => (
@@ -33,8 +35,8 @@ const OptionPay = () => {
         h={{ base: "1px", md: "auto" }}
         bg="#e6e6e6"
       />
-      <Link href="/">
-        <Image boxSize="48px" src={PlusIcon} alt={"StarLogo"} />
+      <Link href="/tarjeta/all">
+        <Image cursor="pointer" boxSize="48px" src={PlusIcon} alt={"StarLogo"} />
       </Link>
     </Stack>
   );

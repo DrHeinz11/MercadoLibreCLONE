@@ -1,4 +1,4 @@
-import { Container, Stack } from "@chakra-ui/react";
+import {  Stack } from "@chakra-ui/react";
 import { Navbar } from "./Components";
 import { Header } from "./Pages/Home";
 

@@ -9,7 +9,7 @@ export const optionPay = [
     imgAlt: "DebitCardReverseIcon",
     text: "Tarjeta de crédito",
     routeText: "Ver promociones bancarias",
-    route: "/targeta",
+    route: "/tarjeta",
     key: 1,
   },
   {
@@ -17,7 +17,7 @@ export const optionPay = [
     imgAlt: "DebitCardIcon",
     text: "Tarjeta de débito",
     routeText: "Ver más",
-    route: "/targeta",
+    route: "/tarjeta",
     key: 2,
   },
   {
@@ -25,7 +25,7 @@ export const optionPay = [
     imgAlt: "QuotationIcon",
     text: "Cuotas sin tarjeta",
     routeText: "Conocé Mercado Crédito",
-    route: "/targeta",
+    route: "/tarjeta",
     key: 3,
   },
   {
@@ -33,7 +33,7 @@ export const optionPay = [
     imgAlt: "DealIcon",
     text: "Efectivo",
     routeText: "Ver más",
-    route: "/targeta",
+    route: "/tarjeta",
     key: 4,
   },
 ];

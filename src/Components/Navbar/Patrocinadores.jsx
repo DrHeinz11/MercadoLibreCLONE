@@ -10,7 +10,11 @@ const Patrocinadores = () => {
     >
       <Box>
         <Image src={StarLogo} alt={"StarLogo"} h="4" w="16" />
-        <Text textAlign="center" fontSize="2xs" fontWeight="light">
+        <Text
+          textAlign="center"
+          fontSize="2xs"
+          fontWeight="light"
+        >
           INCLUIDO
         </Text>
       </Box>
@@ -18,6 +22,7 @@ const Patrocinadores = () => {
         px="2"
         py="0.5"
         borderRadius="md"
+        margin="0 !important"
         bgGradient="linear(to-r, #320057, #b515c9)"
         fontSize={{ base: "xs", md: "sm" }}
       >

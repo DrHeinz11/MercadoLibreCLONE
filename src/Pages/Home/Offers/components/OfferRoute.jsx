@@ -9,6 +9,8 @@ const OfferRoute = () => {
       </Text>
       <Link href="/ofertas/all">
         <Text
+        position='relative'
+        top='5px'
           _hover={{ color: "#0049b6" }}
           as="a"
           cursor="pointer"
