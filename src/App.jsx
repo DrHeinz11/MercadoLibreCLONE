@@ -1,12 +1,12 @@
-import {  Stack } from "@chakra-ui/react";
+import { Stack } from "@chakra-ui/react";
 import { Navbar } from "./Components";
-import { Header } from "./Pages/Home";
+import Routes from "./Routes/Routes";
 
 const App = () => {
   return (
     <Stack margin="0 auto" bg="lightGrey" alignItems="center">
       <Navbar />
-      <Header />
+      <Routes />
     </Stack>
   );
 };

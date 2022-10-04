@@ -4,13 +4,13 @@ import { Link } from "wouter";
 import React from "react";
 const links = [
   {
-    route: "/",
-    text: "Ofertas",
+    route: "/Ofertas",
+    textAlternative: "Ofertas",
     icon: <ChevronDownIcon margin="0 !important" />,
   },
-  { route: "/", text: "Ofertas" },
-  { route: "/", text: "Ofertas" },
-  { route: "/", text: "Ofertas" },
+  { route: "/category/electrodomestico", textAlternative: "Electrodomesticos" },
+  { route: "/category/tecnologia", textAlternative: "Tecnologia" },
+  { route: "/category/jardin", textAlternative: "Jardín" },
 ];
 const OptionNav = () => {
   return (
@@ -29,7 +29,7 @@ const OptionNav = () => {
               align="center"
             >
               <Text as="a" fontSize="sm" color="currentcolor">
-                {link.text}
+                {link.textAlternative}
               </Text>
               {link.icon}
             </Stack>
@@ -37,7 +37,6 @@ const OptionNav = () => {
             <Text
               as="a"
               cursor="pointer"
-              Text
               fontSize="sm"
               color="#3333337d"
               _hover={{
@@ -45,7 +44,7 @@ const OptionNav = () => {
                 transition: "color .3s ease-out",
               }}
             >
-              {link.text}
+              {link.textAlternative}
             </Text>
           )}
         </Link>

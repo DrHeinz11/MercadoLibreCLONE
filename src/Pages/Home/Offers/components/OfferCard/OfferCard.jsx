@@ -2,7 +2,7 @@ import { Stack, Image, Box } from "@chakra-ui/react";
 import { Link } from "wouter";
 const OfferCard = ({ imgUrl, imgAlt, idArt, children }) => {
   return (
-    <Link to={`/articulo/${idArt}`}>
+    <Link to={`/${idArt}`}>
       <Box cursor={"pointer"} zIndex="1">
         <Stack
           w="224px"

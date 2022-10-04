@@ -7,7 +7,7 @@ const OfferRoute = () => {
       <Text fontSize="3xl" fontWeight="light">
         Ofertas
       </Text>
-      <Link href="/ofertas/all">
+      <Link href="/products/all">
         <Text
         position='relative'
         top='5px'
