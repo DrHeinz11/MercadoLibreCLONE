@@ -8,7 +8,7 @@ const Offers = () => {
   return (
     <Router base="/products">
       <Stack w="full" maxW="full" minH={{ base: "auto", md: "85vh" }} gap="4">
-        <SectionRoute title="Ofertas" />
+        <SectionRoute title="Ofertas" cta='Ver Todas' />
         <Stack
           overflowX={{ base: "scroll", md: "hidden" }}
           overflowY="hidden"

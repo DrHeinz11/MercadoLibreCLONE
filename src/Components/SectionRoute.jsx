@@ -1,7 +1,7 @@
 import { HStack, Text } from "@chakra-ui/react";
 import { Link } from "wouter";
 
-const OfferRoute = ({ title, section }) => {
+const OfferRoute = ({ title, section,cta }) => {
   return (
     <HStack align="center" spacing="4">
       <Text fontSize="3xl" fontWeight="light">
@@ -16,7 +16,7 @@ const OfferRoute = ({ title, section }) => {
           cursor="pointer"
           color="ml.blue"
         >
-          Ver todas
+          {cta}
         </Text>
       </Link>
     </HStack>

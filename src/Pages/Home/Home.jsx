@@ -1,8 +1,9 @@
 import { OptionPay } from "./Header/components";
 import { Container } from "@chakra-ui/react";
-import Header from "./Header/Header";
+import { Header } from "./Header/";
 import { Offers } from "./Offers";
-import Subscribe from "./Subscribe/Subscribe";
+import { Subscribe } from "./Subscribe/";
+import { Benefits } from "./Benefits";
 
 const Home = () => {
   return (
@@ -17,6 +18,7 @@ const Home = () => {
         <OptionPay />
         <Offers />
         <Subscribe />
+        <Benefits />
       </Container>
     </>
   );
