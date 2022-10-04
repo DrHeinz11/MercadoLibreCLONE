@@ -1,11 +1,11 @@
 import { Route, Router } from "wouter";
-import { Products, Header, Category } from "../Pages/index";
+import { Products, Home, Category } from "../Pages/index";
 
 const Routes = () => {
   return (
     <>
       <Route path="/">
-        <Header />
+        <Home />
       </Route>
       <Router base="/products">
         <Route path="/:id">{(params) => <Products params={params} />}</Route>

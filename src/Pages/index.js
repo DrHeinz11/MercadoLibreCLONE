@@ -4,6 +4,8 @@ export * from './Home/Header';
 export * from './Home/Offers/components/OfferCard';
 export * from './Home/Offers/components';
 export * from './Home/Offers';
+export { default as Subscribe } from './Home/Subscribe/Subscribe';
+export * from './Home/Subscribe/components';
 export * from './Home';
 export { default as Products } from './Product/Products';
 export * from './index';

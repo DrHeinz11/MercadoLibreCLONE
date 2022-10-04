@@ -12,6 +12,7 @@ const theme = extendTheme({
       greyBg: "#efefef",
       greyAlpha: "#6c6a6a",
       blue: "#3483fa",
+      blueHover: "#0049b6",
       green: "#00a650",
     },
   },

@@ -3,12 +3,19 @@ import LocationNav from "./LocationNav";
 import OptionNav from "./OptionNav";
 import LoginNav from "./LoginNav";
 
-const SubBar = () => {
+const SubBar = (flexDirection) => {
   return (
-    <Stack direction="row" align="flex-end" justify={"space-between"} gap="2">
+    <Stack
+      direction={flexDirection}
+      align="flex-end"
+      wrap="wrap"
+      w="full"
+      justify={{ base: "center", md: "space-between" }}
+      gap="2"
+    >
       <LocationNav />
       <OptionNav />
-      <LoginNav/>
+      <LoginNav />
     </Stack>
   );
 };

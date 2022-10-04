@@ -5,22 +5,21 @@ const OfferCard = ({ imgUrl, imgAlt, idArt, children }) => {
     <Link to={`/${idArt}`}>
       <Box cursor={"pointer"} zIndex="1">
         <Stack
+          borderRadius="md"
           w="224px"
           overflow="hidden"
-          h={{ base: "340px", md: "332px" }}
+          h={{ base: "340px", md: "338px" }}
+          zIndex="10"
           _hover={{
             minHeight: "355px",
             height: "auto",
-            overflow: "visible",
-            boxShadow: "md",
           }}
-          zIndex="10"
         >
           <Image
             src={imgUrl}
             alt={imgAlt}
             zIndex="100"
-            borderBottom="1px solid #ccc"
+            borderBottom="1px solid #ececec"
           />
           {children}
         </Stack>

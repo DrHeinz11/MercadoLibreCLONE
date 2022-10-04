@@ -1,16 +1,16 @@
-import { HStack, Stack, Text } from "@chakra-ui/react";
+import { HStack, Text } from "@chakra-ui/react";
 import { Link } from "wouter";
 
-const OfferRoute = () => {
+const OfferRoute = ({ title, section }) => {
   return (
     <HStack align="center" spacing="4">
       <Text fontSize="3xl" fontWeight="light">
-        Ofertas
+        {title}
       </Text>
-      <Link href="/products/all">
+      <Link href={`/all`}>
         <Text
-        position='relative'
-        top='5px'
+          position="relative"
+          top="5px"
           _hover={{ color: "#0049b6" }}
           as="a"
           cursor="pointer"
