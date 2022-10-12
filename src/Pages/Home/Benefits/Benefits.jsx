@@ -7,12 +7,12 @@ import { BenefitsBox, BenefitsHeading } from "./components";
 const Benefits = () => {
   return (
     <Router base="/benefits">
-      <Stack w="full" maxW="full" minH={{ base: "auto", md: "85vh" }} gap="4">
+      <Stack w="full"  maxW="full" minH={{ base: "auto", md: "50vh" }} gap="4">
         <SectionRoute
           title="Beneficios de Mercado Puntos"
           cta="Ver todos los beneficios"
         />
-        <Grid gap="4" gridTemplateColumns="repeat(auto-fill,minmax(325px,350px))">
+        <Grid gap="4" gridTemplateColumns="repeat(auto-fit,minmax(330px,1fr))">
           {dataBenefits.map((element) => (
             <BenefitsBox
               key={element.id}

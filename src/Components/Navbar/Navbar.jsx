@@ -6,8 +6,8 @@ import { Link } from "wouter";
 
 const Navbar = () => {
   return (
-    <Stack py={{ base: 4, md: 2 }} px={2} bg="ml.yellow" w="full">
-      <Stack maxW="1200px">
+    <Stack margin='0 auto !important' py={{ base: 4, md: 2 }} px={2} bg="ml.yellow" w="full">
+      <Stack margin='0 auto !important' w='full' maxW="1200px">
         <Stack
           direction="row"
           alignItems="center"
@@ -33,7 +33,7 @@ const Navbar = () => {
             <Patrocinadores />
           </Box>
         </Stack>
-        <Box directionRender={{ base: "column", md: "row" }}>
+        <Box directionrender={{ base: "column", md: "row" }}>
           <SubBar />
         </Box>
       </Stack>

@@ -34,5 +34,5 @@ export const dataBenefits = [
     backgrounImg:
       "https://http2.mlstatic.com/resources/frontend/statics/loyal/paramount/widget/paramount-mla-mlc@2x.jpg",
     id: 3,
-  },
+  }, 
 ];

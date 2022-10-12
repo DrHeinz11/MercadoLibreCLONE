@@ -4,6 +4,8 @@ import { Header } from "./Header/";
 import { Offers } from "./Offers";
 import { Subscribe } from "./Subscribe/";
 import { Benefits } from "./Benefits";
+import OffersDay from "./OffersDay/OffersDay";
+import Descubrí from "./Descubrí/Descubrí";
 
 const Home = () => {
   return (
@@ -11,7 +13,7 @@ const Home = () => {
       <Header />
       <Container
         gap={{ base: 20, md: 10 }}
-        maxW="1200px"
+        maxW="1300px"
         px={{ base: 5, md: 14 }}
         centerContent
       >
@@ -19,6 +21,8 @@ const Home = () => {
         <Offers />
         <Subscribe />
         <Benefits />
+        <OffersDay />
+        <Descubrí />
       </Container>
     </>
   );

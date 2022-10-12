@@ -3,8 +3,8 @@ import { Link } from "wouter";
 
 const OfferRoute = ({ title, section,cta }) => {
   return (
-    <HStack align="center" spacing="4">
-      <Text fontSize="3xl" fontWeight="light">
+    <HStack align={{base:'baseline',md:"center" }}spacing="4">
+      <Text fontSize="2xl" fontWeight="light">
         {title}
       </Text>
       <Link href={`/all`}>
