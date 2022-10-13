@@ -11,7 +11,8 @@ const Card = ({ urlImg, topHeading, heading }) => {
           textTransform="capitalize"
           borderRadius="sm"
           colorScheme={"linkedin"}
-          w='3xs'
+          px='8'
+          w='fit-content'
         >
           Ver más
         </Button>

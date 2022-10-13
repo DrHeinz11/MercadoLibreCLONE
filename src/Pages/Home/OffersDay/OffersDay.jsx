@@ -7,8 +7,8 @@ const OffersDay = () => {
     <Grid
       gridTemplateColumns="repeat(auto-fit,minmax(330px,1fr))"
       w="full"
-      h={{base:'auto',md:"50vh"}}
-      bg='#000'
+      minH="50vh"
+      bg="#000"
     >
       <Image
         src="https://http2.mlstatic.com/D_NQ_983640-MLA51373568766_092022-OO.jpg"
