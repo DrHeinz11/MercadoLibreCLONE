@@ -4,38 +4,42 @@ import { Link } from "wouter";
 
 const TiendaCard = ({ props }) => {
   return (
-      <Stack
-        borderRadius="md"
-        justifyItems="center"
-        alignItems="center"
-        textAlign="center"
-        bg="#fafafa" 
-        width="full"
-        gap={8}
-      >
-        <ImageHeader props={props}>
-          <ImageBrand
-            imgBrand={props.brand.imgBrand}
-            imgBrandAtl={props.brand.imgBrandAlt}
-          />
-        </ImageHeader>
+    <Stack
+      borderRadius="md"
+      justifyItems="center"
+      alignItems="center"
+      textAlign="center"
+      bg="#fafafa"
+      width="full"
+      gap={8}
+    >
+      <ImageHeader props={props}>
+        <ImageBrand
+          imgBrand={props.brand.imgBrand}
+          imgBrandAtl={props.brand.imgBrandAlt}
+        />
+      </ImageHeader>
 
-        <Stack p="8" gap={4}>
-          <Heading fontSize="lg" textTransform="capitalize">
-            {props.title}
-          </Heading>
-          <HStack>
-            {props.icon.map((element) => (
-              <ImageIcons key={element.id} props={element} />
-            ))}
-          </HStack>
-          <Link href={`/products/${props.brand.brand}`}>
-            <Text cursor="pointer" as="a" color="#ccc" fontSize="md">
-              Ver tienda
-            </Text>
-          </Link>
-        </Stack>
+      <Stack p="8" gap={4}>
+        <Heading fontSize="lg" textTransform="capitalize">
+          {props.title}
+        </Heading>
+        <HStack>
+          {props.icon.map((element) => (
+            <ImageIcons
+              key={element.id}
+              props={element}
+              brand={props.brand.brand}
+            />
+          ))}
+        </HStack>
+        <Link href={`/products/${props.brand.brand}`}>
+          <Text cursor="pointer" as="a" color="#ccc" fontSize="md">
+            Ver tienda
+          </Text>
+        </Link>
       </Stack>
+    </Stack>
   );
 };
 
