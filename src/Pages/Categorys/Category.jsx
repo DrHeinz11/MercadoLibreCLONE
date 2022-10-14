@@ -6,7 +6,7 @@ const Category = ({ params }) => {
   return (
     <div>
       Category
-      <Heading>{id}</Heading>
+      <Heading textTransform="capitalize">{id}</Heading>
     </div>
   );
 };

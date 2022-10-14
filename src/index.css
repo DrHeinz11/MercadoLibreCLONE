@@ -1,4 +1,6 @@
-
+body{
+  overflow-x: hidden;
+}
 input[type="text"]:focus-visible {
   outline: 0;
 }

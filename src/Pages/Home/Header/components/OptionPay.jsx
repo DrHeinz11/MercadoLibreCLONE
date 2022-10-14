@@ -16,7 +16,7 @@ const OptionPay = () => {
       borderRadius="md"
       boxShadow="md"
       bg="#fafafa"
-      margin={"4rem auto"}
+      my='4'
       justify={"space-between"}
       alignItems="center"
     >

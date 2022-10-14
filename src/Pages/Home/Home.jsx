@@ -6,7 +6,9 @@ import {
   Subscribe,
   Benefits,
   OffersDay,
-  Descubrí,Tiendas
+  Descubrí,
+  Tiendas,
+  PopularCategories,
 } from "./index";
 const Home = () => {
   return (
@@ -25,7 +27,8 @@ const Home = () => {
         <Benefits />
         <OffersDay />
         <Descubrí />
-        <Tiendas /> 
+        <Tiendas />
+        <PopularCategories />
       </Container>
     </>
   );

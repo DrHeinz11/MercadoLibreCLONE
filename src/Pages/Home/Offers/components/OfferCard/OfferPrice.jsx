@@ -12,8 +12,8 @@ const OfferPrice = ({ price, discount, prevPrice, description, children }) => {
     <Stack py="20px" px="16px" position="relative" bg='#fff' margin="0 !important">
       <Text as="s">{parsePrice(prevPrice)}</Text>
       <HStack>
-        <Text>{parsePrice(price)}</Text>
-        <Text color='ml.green'>{discount}</Text>
+        <Text fontSize='xl' fontWeight='semibold'>{parsePrice(price)}</Text>
+        <Text fontSize='xs' color='ml.green'>{discount}</Text>
       </HStack>
       {children}
       <Text>{description}</Text>

@@ -10,6 +10,8 @@ export * from './Offers/components';
 export * from './Offers';
 export { default as OffersDay } from './OffersDay/OffersDay';
 export { default as TextCard } from './OffersDay/components/TextCard';
+export { default as PopularCategories } from './PopularCategories/PopularCategories';
+export * from './PopularCategories/components/CardCategories';
 export * from './Subscribe/components';
 export * from './Subscribe';
 export { default as Tiendas } from './Tiendas/Tiendas';
