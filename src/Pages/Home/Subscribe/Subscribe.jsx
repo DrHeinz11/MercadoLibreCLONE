@@ -22,7 +22,7 @@ const Subscribe = () => {
         borderRadius="md"
         bgGradient="linear(to-l, #0c1a51,#a90f90 50%)"
       >
-        <Heading>Suscribite al nivel 6</Heading>
+        <Heading >Suscribite al nivel 6</Heading>
         <HStack>
           <StackDivider h="16" w="5px" bg="#fff" />
           <Box>

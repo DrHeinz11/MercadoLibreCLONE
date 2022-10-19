@@ -13,7 +13,7 @@ const PayCard = ({
       >
         <Image src={imgUrl} boxSize="48px" alt={imgAlt} />
         <Box>
-          <Text textTransform="capitalize" fontSize="md">
+          <Text fontWeight='semibold' textTransform="capitalize" fontSize="md">
             {text}
           </Text>
           <Link href={route}>

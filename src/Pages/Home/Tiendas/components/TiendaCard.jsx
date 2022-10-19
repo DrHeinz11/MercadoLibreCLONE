@@ -34,7 +34,7 @@ const TiendaCard = ({ props }) => {
           ))}
         </HStack>
         <Link href={`/products/${props.brand.brand}`}>
-          <Text cursor="pointer" as="a" color="#ccc" fontSize="md">
+          <Text cursor="pointer" as="a" color="#ccc" fontWeight='semibold' _hover={{color: 'black'}} fontSize="md">
             Ver tienda
           </Text>
         </Link>

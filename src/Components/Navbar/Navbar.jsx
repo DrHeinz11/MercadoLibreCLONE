@@ -1,7 +1,8 @@
 import SearchBar from "./SearchBar";
 import SubBar from "./SubBar";
+import LibreMercadoLogo from '../../assets/LibreMercadoLogo.svg'
 import Patrocinadores from "./Patrocinadores";
-import { Stack, Box } from "@chakra-ui/react";
+import { Stack, Box,Image } from "@chakra-ui/react";
 import { Link } from "wouter";
 
 const Navbar = () => {
@@ -16,17 +17,7 @@ const Navbar = () => {
           gap={2}
         >
           <Link href="/">
-            <Box
-              as={"a"}
-              cursor="pointer"
-              w="134px"
-              h="34px"
-              backgroundRepeat="no-repeat"
-              backgroundSize="contain"
-              backgroundImage={
-                "url('https://http2.mlstatic.com/frontend-assets/ml-web-navigation/ui-navigation/5.19.5/mercadolibre/logo__large_plus@2x.png')"
-              }
-            />
+            <Image maxW='75px' cursor='pointer' src={LibreMercadoLogo} alt='libre-mercado-logo'/>
           </Link>
           <SearchBar />
           <Box display={{ base: "none", md: "contents" }}>
