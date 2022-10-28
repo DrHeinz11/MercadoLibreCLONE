@@ -6,7 +6,7 @@ const OfferCard = ({ imgUrl, imgAlt, idArt, children }) => {
   const [favorites, setFavorites] = useState(false);
   const handleFavoriteClick = () => setFavorites(!favorites);
   return (
-    <Box cursor={"pointer"} position="relative" zIndex="1" h="395px">
+    <Box cursor={"pointer"} position="relative" zIndex="1" h="395px" _hover={{boxShadow:'lg'}}>
       <Box borderRadius="full" boxShadow="md" onClick={handleFavoriteClick}>
         <Favorite props={favorites} />
       </Box>

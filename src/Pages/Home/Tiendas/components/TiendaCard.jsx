@@ -12,6 +12,7 @@ const TiendaCard = ({ props }) => {
       bg="#fafafa"
       width="full"
       gap={8}
+      _hover={{boxShadow: "xl" }}
     >
       <ImageHeader props={props}>
         <ImageBrand

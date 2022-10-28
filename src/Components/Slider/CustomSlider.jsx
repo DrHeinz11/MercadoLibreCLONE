@@ -31,19 +31,17 @@ const CustomSlider = ({ children }) => {
         position="relative"
       >
         <ChevronLeftIcon
+         color='ml.blue'
           onClick={() => scrollMethods.scrollLeft(setActionSlide)}
           zIndex="200"
           position="absolute"
           opacity={actionSlide === 0 ? "0" : "1"}
           cursor="pointer"
-          width="4rem"
-          height="4rem"
+          width="3.5rem"
+          height="3.5rem"
           borderRadius="full"
           bg="#fff"
-          border="3px solid var(--chakra-colors-primary-darkGranate)"
           _hover={{
-            borderColor: "var(--chakra-colors-primary-pinkChicle)",
-            color: "var(--chakra-colors-primary-pinkChicle)",
             opacity: "1",
             transition: "all 300ms ease 0s",
           }}
@@ -53,20 +51,17 @@ const CustomSlider = ({ children }) => {
           {children}
         </Slides>
         <ChevronRightIcon
+         color='ml.blue'
           onClick={() => scrollMethods.scrollRight(setActionSlide)}
           zIndex="200"
           position="absolute"
           right="0"
           cursor="pointer"
-          width="4rem"
-          height="4rem"
+          width="3.5rem"
+          height="3.5rem"
           borderRadius="full"
           bg="#fff"
           boxShadow="lg"
-          _hover={{
-            borderColor: "var(--chakra-colors-primary-pinkChicle)",
-            transition: "all 300ms ease 0s",
-          }}
           display={{ base: "none", md: "block" }}
         />
       </Stack>
