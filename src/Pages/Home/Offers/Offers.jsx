@@ -2,22 +2,14 @@ import { Stack } from "@chakra-ui/react";
 import { OfferCard, OfferFees, OfferPrice } from "./components";
 import { Router } from "wouter";
 import { dataProduct } from "../../../Constant";
-import { SectionRoute } from "../../../Components";
+import { SectionRoute, CustomSlider } from "../../../Components";
 
 const Offers = () => {
   return (
     <Router base="/products">
       <Stack w="full" maxW="full" minH={{ base: "auto", md: "85vh" }} gap="4">
-        <SectionRoute title="Ofertas" cta='Ver Todas' />
-        <Stack
-          overflowX={{ base: "scroll", md: "hidden" }}
-          overflowY="hidden"
-          minH={{ base: "auto", md: "70vh" }}
-          maxW="full"
-          width="full"
-          direction="row"
-          gap="4"
-        >
+        <SectionRoute title="Ofertas" cta="Ver Todas" />
+        <CustomSlider>
           {dataProduct.map((element) => (
             <OfferCard
               key={element.idArt}
@@ -35,7 +27,7 @@ const Offers = () => {
               </OfferPrice>
             </OfferCard>
           ))}
-        </Stack>
+        </CustomSlider>
       </Stack>
     </Router>
   );
