@@ -1,6 +1,6 @@
 import { Stack } from "@chakra-ui/react";
 import { CustomSlider, SectionRoute } from "../../../Components";
-import { obejtor } from "../../../Constant";
+import { dataCardBrand } from "../../../Constant";
 import { TiendaCard } from "./components";
 
 const Tiendas = () => {
@@ -11,7 +11,7 @@ const Tiendas = () => {
         cta="Ver todos los beneficios"
       />
       <CustomSlider>
-        {obejtor.map((element) => (
+        {dataCardBrand.map((element) => (
           <TiendaCard key={element.key} props={element} />
         ))}
       </CustomSlider>

@@ -1,14 +1,13 @@
 import { chakra, Stack, Heading, StackDivider, Grid } from "@chakra-ui/react";
 import { SearchIcon } from "@chakra-ui/icons";
-import { useState } from "react";
+import { useRef, useState } from "react";
 
 const SearchBar = () => {
   const [keywoard, setKeyboard] = useState("");
-  const [search, setSearch] = useState("");
+  const formReference = useRef();
   const handleSubmitSearch = (ev) => {
     ev.preventDefault();
-    setKeyboard(search);
-    console.log(keywoard);
+    setKeyboard(formReference.current.value);
   };
   return (
     <Stack
@@ -33,11 +32,10 @@ const SearchBar = () => {
         align="center"
       >
         <chakra.input
+          ref={formReference}
           w="full"
           placeholder="Buscar marcas,productos y más..."
           type="text"
-          value={search}
-          onChange={(ev) => setSearch(ev.target.value)}
         />
       </chakra.form>
       <StackDivider w="1px" bg="#e6e6e6" />

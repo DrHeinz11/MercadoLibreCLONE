@@ -4,7 +4,7 @@ import { Link } from "wouter";
 const ImageIcons = ({ props, brand }) => {
   const { iconUrl, iconAlt, id } = props;
   return (
-    <Link href={`/product/${brand.trim()}/${id}`}>
+    <Link href={`/products/${brand.trim()}/${id}`}>
       <Image
         _hover={{ boxShadow: "md" }}
         cursor="pointer"

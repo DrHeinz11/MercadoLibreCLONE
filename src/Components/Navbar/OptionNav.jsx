@@ -5,7 +5,7 @@ import React from "react";
 const links = [
   {
     route: "/Ofertas",
-    textAlternative: "Ofertas",
+    textAlternative: "Categorías",
     icon: <ChevronDownIcon margin="0 !important" />,
   },
   { route: "/category/electrodomestico", textAlternative: "Electrodomesticos" },

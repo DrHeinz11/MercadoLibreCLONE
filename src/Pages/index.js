@@ -18,4 +18,5 @@ export { default as Tiendas } from './Home/Tiendas/Tiendas';
 export * from './Home/Tiendas/components';
 export * from './Home';
 export { default as Products } from './Product/Products';
+export { default as ProductsAll } from './Product/ProductsAll';
 export * from './index';
