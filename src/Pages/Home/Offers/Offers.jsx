@@ -3,8 +3,13 @@ import { OfferCard, OfferFees, OfferPrice } from "./components";
 import { Router } from "wouter";
 import { dataProduct } from "../../../Constant";
 import { SectionRoute, CustomSlider } from "../../../Components";
+import { useEffect, useState } from "react";
 
 const Offers = () => {
+  const [cart, setCart] = useState([]);
+  useEffect(() => {
+    console.log(cart);
+  }, [cart]);
   return (
     <Router base="/products">
       <Stack w="full" maxW="full" minH={{ base: "auto", md: "85vh" }} gap="4">
@@ -16,6 +21,7 @@ const Offers = () => {
               imgUrl={element.imgUrl}
               imgAlt={element.imgAlt}
               idArt={element.idArt}
+              setCart={setCart}
             >
               <OfferPrice
                 price={element.price}

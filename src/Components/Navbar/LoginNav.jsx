@@ -1,5 +1,5 @@
 import Cart from "../../assets/Cart";
-import { Stack, Text } from "@chakra-ui/react";
+import { Box, Stack, Text } from "@chakra-ui/react";
 
 const LoginNav = () => {
   return (
@@ -40,7 +40,13 @@ const LoginNav = () => {
       >
         Mis compras
       </Text>
-      <Cart props={{ fill: "#6c6a6a" }} />
+      <Box
+        cursor="pointer"
+        px="2"
+        onClick={() => alert("Hola esto es una prueba")}
+      >
+        <Cart cursor="pointer" props={{ fill: "#6c6a6a" }} />
+      </Box>
     </Stack>
   );
 };

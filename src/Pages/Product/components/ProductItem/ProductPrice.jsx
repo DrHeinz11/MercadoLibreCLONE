@@ -13,8 +13,7 @@ const ProductPrice = ({ price = 1000, description, children }) => {
     <Stack
       py="20px"
       px="16px"
-      position="relative"
-      top="-13px"
+      margin="0 !important"
       bg="#fff"
       borderBottomRadius={'md'}
     >

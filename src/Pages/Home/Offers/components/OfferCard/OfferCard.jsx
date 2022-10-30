@@ -1,10 +1,30 @@
 import { Stack, Image, Box } from "@chakra-ui/react";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { Link } from "wouter";
 import Favorite from "../../../../../Components/Icons/Favorite";
-const OfferCard = ({ imgUrl, imgAlt, idArt, children }) => {
+const OfferCard = ({ imgUrl, imgAlt, idArt, children, setCart }) => {
   const [favorites, setFavorites] = useState(false);
-  const handleFavoriteClick = () => setFavorites(!favorites);
+
+  const handleFavoriteClick = () => {
+    setFavorites((prev) => !prev);
+  };
+  
+  const cartMethods = {
+    addToCart(prev) {
+      return [...prev, { imgUrl: imgUrl, imgAlt: imgAlt, idArt: idArt }];
+    },
+    deleteToCart(prev) {
+      return prev.filter((element) => element.idArt !== idArt);
+    },
+  };
+
+  useEffect(() => {
+    if (favorites) {
+      setCart((prev) => cartMethods.addToCart(prev));
+    } else {
+      setCart((prev) => cartMethods.deleteToCart(prev));
+    }
+  }, [favorites]);
   return (
     <Box
       cursor={"pointer"}
@@ -28,7 +48,7 @@ const OfferCard = ({ imgUrl, imgAlt, idArt, children }) => {
           borderRadius="md"
           w="224px"
           overflow="hidden"
-          h="330px"
+          h={{ base: "392px", md: "330px" }}
           zIndex="10"
           whiteSpace={"normal"}
           _hover={{
