@@ -1,7 +1,8 @@
 import { Heading, HStack, Image, Stack, Text } from "@chakra-ui/react";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import { dataCardBrand } from "../../Constant";
 import ProductDescription from "./components/ProductDescription";
+import ProductIcon from "./components/ProductIcon";
 
 const Products = ({ params }) => {
   const { brand, id } = params;
@@ -16,11 +17,13 @@ const Products = ({ params }) => {
   if (dataFilled.length === 0 || !dataResult) {
     return <Heading>No Hay resultados en este momento...</Heading>;
   }
+  console.log(dataResult);
 
   return (
     <>
       {dataResult?.map((element) => (
         <HStack
+          margin={"0 !important"}
           spacing="none"
           gap="4"
           key={element.id}
@@ -32,17 +35,18 @@ const Products = ({ params }) => {
           bg="#fafafa"
           minH="75vh"
         >
+          <ProductIcon icons={element.icons} />
           <Image
             maxW="41rem"
             h={{ base: "18rem", md: "25rem" }}
             w="full"
             objectFit="contain"
             src={element.imgUrl}
-            alt={element.iconAlt}
+            alt={element.iconThumbnailAlt}
           />
           <ProductDescription
             id={element.id}
-            iconUrl={element.iconUrl}
+            iconUrl={element.iconThumbnailUrl}
             price={element.price}
             description={element.description}
             shipping={element.shipping}

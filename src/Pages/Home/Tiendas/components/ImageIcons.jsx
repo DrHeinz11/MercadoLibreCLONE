@@ -2,14 +2,14 @@ import { Image } from "@chakra-ui/react";
 import { Link } from "wouter";
 
 const ImageIcons = ({ props, brand }) => {
-  const { iconUrl, iconAlt, id } = props;
+  const { iconThumbnailUrl, iconAlt, id } = props;
   return (
     <Link href={`/products/${brand.trim()}/${id}`}>
       <Image
         _hover={{ boxShadow: "md" }}
         cursor="pointer"
         boxSize="68px"
-        src={iconUrl}
+        src={iconThumbnailUrl}
         alt={iconAlt}
         borderRadius="xl"
         border="1px solid #ccc"

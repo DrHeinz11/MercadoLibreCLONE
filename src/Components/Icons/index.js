@@ -8,6 +8,7 @@ export { default as Favorite } from './Favorite';
 export { default as Games } from './Games';
 export { default as Home } from './Home';
 export { default as Joyas } from './Joyas';
+export { default as LogoIcon } from './LogoIcon';
 export { default as Micro } from './Micro';
 export { default as Souvenirs } from './Souvenirs';
 export { default as Ticket } from './Ticket';

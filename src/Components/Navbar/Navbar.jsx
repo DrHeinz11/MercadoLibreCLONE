@@ -1,8 +1,8 @@
 import SearchBar from "./SearchBar";
 import SubBar from "./SubBar";
-import LibreMercadoLogo from "../../assets/LibreMercadoLogo.svg";
+import { LogoIcon } from "../Icons";
 import Patrocinadores from "./Patrocinadores";
-import { Stack, Box, Image } from "@chakra-ui/react";
+import { Stack, Box } from "@chakra-ui/react";
 import { Link } from "wouter";
 import { useState } from "react";
 import { CloseIcon, HamburgerIcon } from "@chakra-ui/icons";
@@ -26,14 +26,7 @@ const Navbar = () => {
           gap={2}
         >
           <Link href="/">
-            <Box bg="#c1c1c1" borderRadius="full" p="2px">
-              <Image
-                maxW="75px"
-                cursor="pointer"
-                src={LibreMercadoLogo}
-                alt="libre-mercado-logo"
-              />
-            </Box>
+            <LogoIcon />{" "}
           </Link>
           <SearchBar />
           <Box display={{ base: "none", md: "contents" }}>

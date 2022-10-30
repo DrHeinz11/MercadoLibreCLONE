@@ -4,9 +4,9 @@ export const dataCardBrand = [
       "https://http2.mlstatic.com/storage/official-stores-images/citronrepuestos/background_home202002130943.jpg",
     icon: [
       {
-        iconUrl:
+        iconThumbnailUrl:
           "https://http2.mlstatic.com/D_Q_NP_800599-MLA40680519430_022020-R.webp",
-        iconAlt: "Rejilla-Paragolpes-Citroën-C3",
+        iconThumbnailAlt: "Rejilla-Paragolpes-Citroën-C3",
         id: "1",
         shipping: {
           send: "free",
@@ -22,9 +22,15 @@ export const dataCardBrand = [
       {
         imgUrl:
           "https://http2.mlstatic.com/D_NQ_NP_881793-MLA40680518351_022020-O.webp",
-        iconUrl:
+        iconThumbnailUrl:
           "https://http2.mlstatic.com/D_Q_NP_881793-MLA40680518351_022020-R.webp",
-        iconAlt: "Proyector-Delantero-Citroën-C3",
+        iconThumbnailAlt: "Proyector-Delantero-Citroën-C3",
+        icons: [
+          "https://http2.mlstatic.com/D_Q_NP_881793-MLA40680518351_022020-R.webp",
+          "https://http2.mlstatic.com/D_Q_NP_881793-MLA40680518351_022020-R.webp",
+          "https://http2.mlstatic.com/D_Q_NP_881793-MLA40680518351_022020-R.webp",
+          "https://http2.mlstatic.com/D_Q_NP_881793-MLA40680518351_022020-R.webp",
+        ],
         shipping: {
           send: "free",
           devolution: {
@@ -38,9 +44,9 @@ export const dataCardBrand = [
         id: "2",
       },
       {
-        iconUrl:
+        iconThumbnailUrl:
           "https://http2.mlstatic.com/D_Q_NP_904722-MLA44123885770_112020-R.webp",
-        iconAlt: "Guardabarros-Delantero-Izquierdo-Citroen-C3",
+        iconThumbnailAlt: "Guardabarros-Delantero-Izquierdo-Citroen-C3",
         id: "3",
         shipping: {
           send: "free",
@@ -68,21 +74,21 @@ export const dataCardBrand = [
       "https://http2.mlstatic.com/storage/official-stores-images/simmons/background_home201803120215.jpg",
     icon: [
       {
-        iconUrl:
+        iconThumbnailUrl:
           "https://http2.mlstatic.com/D_Q_NP_2X_785300-MLA49590376007_042022-R.webp",
-        iconAlt: "Rejilla-Paragolpes-Citroën-C3",
+        iconThumbnailAlt: "Rejilla-Paragolpes-Citroën-C3",
         id: "1",
       },
       {
-        iconUrl:
+        iconThumbnailUrl:
           "https://http2.mlstatic.com/D_Q_NP_2X_963929-MLA47327925853_092021-R.webp",
-        iconAlt: "Proyector-Delantero-Citroën-C3",
+        iconThumbnailAlt: "Proyector-Delantero-Citroën-C3",
         id: "2",
       },
       {
-        iconUrl:
+        iconThumbnailUrl:
           "https://http2.mlstatic.com/D_Q_NP_2X_972992-MLA49590221532_042022-R.webp",
-        iconAlt: "Guardabarros-Delantero-Izquierdo-Citroen-C3",
+        iconThumbnailAlt: "Guardabarros-Delantero-Izquierdo-Citroen-C3",
         id: "3",
       },
     ],
@@ -100,21 +106,21 @@ export const dataCardBrand = [
       "https://http2.mlstatic.com/storage/official-stores-images/adidasperformance/background_home201711211123.jpg",
     icon: [
       {
-        iconUrl:
+        iconThumbnailUrl:
           "https://http2.mlstatic.com/D_Q_NP_2X_993646-MLA48258348451_112021-R.webp",
-        iconAlt: "Rejilla-Paragolpes-Citroën-C3",
+        iconThumbnailAlt: "Rejilla-Paragolpes-Citroën-C3",
         id: "1",
       },
       {
-        iconUrl:
+        iconThumbnailUrl:
           "https://http2.mlstatic.com/D_Q_NP_2X_630138-MLA46744491743_072021-R.webp",
-        iconAlt: "Proyector-Delantero-Citroën-C3",
+        iconThumbnailAlt: "Proyector-Delantero-Citroën-C3",
         id: "2",
       },
       {
-        iconUrl:
+        iconThumbnailUrl:
           "https://http2.mlstatic.com/D_Q_NP_2X_696355-MLA51532301288_092022-R.webp",
-        iconAlt: "Guardabarros-Delantero-Izquierdo-Citroen-C3",
+        iconThumbnailAlt: "Guardabarros-Delantero-Izquierdo-Citroen-C3",
         id: "3",
       },
     ],
@@ -132,21 +138,21 @@ export const dataCardBrand = [
       "https://http2.mlstatic.com/storage/official-stores-images/pintureriasrex/background_home201802011110.jpg",
     icon: [
       {
-        iconUrl:
+        iconThumbnailUrl:
           "https://http2.mlstatic.com/D_Q_NP_747195-MLA47571222266_092021-R.webp",
-        iconAlt: "Rejilla-Paragolpes-Citroën-C3",
+        iconThumbnailAlt: "Rejilla-Paragolpes-Citroën-C3",
         id: "1",
       },
       {
-        iconUrl:
+        iconThumbnailUrl:
           "https://http2.mlstatic.com/D_Q_NP_699078-MLA40435686372_012020-R.webp",
-        iconAlt: "Proyector-Delantero-Citroën-C3",
+        iconThumbnailAlt: "Proyector-Delantero-Citroën-C3",
         id: "2",
       },
       {
-        iconUrl:
+        iconThumbnailUrl:
           "https://http2.mlstatic.com/D_Q_NP_770300-MLA49927288296_052022-R.webp",
-        iconAlt: "Guardabarros-Delantero-Izquierdo-Citroen-C3",
+        iconThumbnailAlt: "Guardabarros-Delantero-Izquierdo-Citroen-C3",
         id: "3",
       },
     ],
@@ -164,21 +170,21 @@ export const dataCardBrand = [
       "https://http2.mlstatic.com/storage/official-stores-images/philips/background_home201801260438.jpg",
     icon: [
       {
-        iconUrl:
+        iconThumbnailUrl:
           "https://http2.mlstatic.com/D_Q_NP_811317-MLA51229842570_082022-R.webp",
-        iconAlt: "Rejilla-Paragolpes-Citroën-C3",
+        iconThumbnailAlt: "Rejilla-Paragolpes-Citroën-C3",
         id: "1",
       },
       {
-        iconUrl:
+        iconThumbnailUrl:
           "https://http2.mlstatic.com/D_Q_NP_930902-MLA43623760984_092020-R.webp",
-        iconAlt: "Proyector-Delantero-Citroën-C3",
+        iconThumbnailAlt: "Proyector-Delantero-Citroën-C3",
         id: "2",
       },
       {
-        iconUrl:
+        iconThumbnailUrl:
           "https://http2.mlstatic.com/D_Q_NP_840985-MLA47891535570_102021-R.webp",
-        iconAlt: "Guardabarros-Delantero-Izquierdo-Citroen-C3",
+        iconThumbnailAlt: "Guardabarros-Delantero-Izquierdo-Citroen-C3",
         id: "3",
       },
     ],
@@ -196,21 +202,21 @@ export const dataCardBrand = [
       "https://http2.mlstatic.com/storage/official-stores-images/samsung/background_home201902190516.jpg",
     icon: [
       {
-        iconUrl:
+        iconThumbnailUrl:
           "https://http2.mlstatic.com/D_Q_NP_636880-MLA49925816154_052022-R.webp",
-        iconAlt: "Rejilla-Paragolpes-Citroën-C3",
+        iconThumbnailAlt: "Rejilla-Paragolpes-Citroën-C3",
         id: "1",
       },
       {
-        iconUrl:
+        iconThumbnailUrl:
           "https://http2.mlstatic.com/D_Q_NP_986281-MLA49326772215_032022-R.webp",
-        iconAlt: "Proyector-Delantero-Citroën-C3",
+        iconThumbnailAlt: "Proyector-Delantero-Citroën-C3",
         id: "2",
       },
       {
-        iconUrl:
+        iconThumbnailUrl:
           "https://http2.mlstatic.com/D_Q_NP_809520-MLA49798449733_042022-R.webp",
-        iconAlt: "Guardabarros-Delantero-Izquierdo-Citroen-C3",
+        iconThumbnailAlt: "Guardabarros-Delantero-Izquierdo-Citroen-C3",
         id: "3",
       },
     ],

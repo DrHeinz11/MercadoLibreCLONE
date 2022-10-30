@@ -6,19 +6,17 @@ const Patrocinadores = () => {
     <Stack
       direction="row"
       wrap={"wrap"}
+      gap='2'
       align={{ base: "flex-start", md: "center" }}
     >
-      <Box>
+      <Box display={{ base: "none", lg: "contents" }}>
         <Image src={StarLogo} alt={"StarLogo"} h="4" w="16" />
-        <Text
-          textAlign="center"
-          fontSize="2xs"
-          fontWeight="light"
-        >
+        <Text textAlign="center" fontSize="2xs" fontWeight="light">
           INCLUIDO
         </Text>
       </Box>
       <Box
+        minW="192px"
         px="2"
         py="0.5"
         borderRadius="md"
