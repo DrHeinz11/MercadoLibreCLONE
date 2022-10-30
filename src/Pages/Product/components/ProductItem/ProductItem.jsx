@@ -1,4 +1,4 @@
-import { Box, Image } from "@chakra-ui/react";
+import { Box, Image, Stack } from "@chakra-ui/react";
 import React, { useState } from "react";
 import { Link } from "wouter";
 import { Favorite } from "../../../../Components";
@@ -7,8 +7,15 @@ const ProductItem = ({ children, imgUrl, imgAlt, idArt, brand }) => {
   const [favorites, setFavorites] = useState(false);
   const handleFavoriteClick = () => setFavorites(!favorites);
   return (
-    <Box cursor={"pointer"} position="relative" zIndex="1" h="fit-content">
-      <Box borderRadius="full" boxShadow="md" onClick={handleFavoriteClick}>
+    <Box
+      cursor={"pointer"}
+      position="relative"
+      zIndex="1"
+      h='fit-content'
+      borderRadius="md"
+      _hover={{ boxShadow: "xl" }}
+    >
+      <Box  borderRadius="full" boxShadow="md" _hover={{ boxShadow:'xl'}} onClick={handleFavoriteClick}>
         <Favorite
           props={{
             favorites: favorites.toString(),
@@ -19,13 +26,16 @@ const ProductItem = ({ children, imgUrl, imgAlt, idArt, brand }) => {
         />
       </Box>
       <Link to={`/${brand}/${idArt}`}>
-        <Image
-          src={imgUrl}
-          alt={imgAlt}
-          zIndex="15"
-          borderBottom="1px solid #ececec"
-        />
-        {children}
+        <Stack>
+          <Image
+            borderTopRadius="md"
+            src={imgUrl}
+            alt={imgAlt}
+            zIndex="15"
+            borderBottom="1px solid #ececec"
+          />
+          {children}
+        </Stack>
       </Link>
     </Box>
   );

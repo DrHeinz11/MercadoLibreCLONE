@@ -5,8 +5,11 @@ import TextCard from "./components/TextCard";
 const OffersDay = () => {
   return (
     <Grid
-    my='10'
-      gridTemplateColumns="repeat(auto-fit,minmax(330px,1fr))"
+      my="10"
+      gridTemplateColumns={{
+        base: "none",
+        md: "repeat(auto-fit,minmax(330px,1fr))",
+      }}
       w="full"
       minH="50vh"
       bg="#000"

@@ -10,14 +10,7 @@ const Carrousel = () => {
 
   return (
     <Box w="full" spacing={"none"} margin="0 !important">
-      <Img
-        w="full"
-        h="75vh"
-        objectPosition={"0 -2.5rem"}
-        objectFit="cover"
-        src={dataImage[0]}
-        alt="Carrousel"
-      />
+      <Img w="full" blockStyle="auto" src={dataImage[0]} alt="Carrousel" />
     </Box>
   );
 };

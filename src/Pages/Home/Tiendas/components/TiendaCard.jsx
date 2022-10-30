@@ -1,6 +1,7 @@
 import { Heading, HStack, Stack, Text } from "@chakra-ui/react";
 import { ImageBrand, ImageIcons, ImageHeader } from "./index";
 import { Link } from "wouter";
+import handleScrollToTop from "../../../../utils/handleScrollToTop";
 
 const TiendaCard = ({ props }) => {
   return (
@@ -34,8 +35,8 @@ const TiendaCard = ({ props }) => {
             />
           ))}
         </HStack>
-        <Link href={`/products/${props.brand.brand}`}>
-          <Text cursor="pointer" as="a" color="#ccc" fontWeight='semibold' _hover={{color: 'black'}} fontSize="md">
+        <Link onClick={handleScrollToTop} href={`/products/${props.brand.brand}`}>
+          <Text  cursor="pointer" as="a" color="#ccc" fontWeight='semibold' _hover={{color: 'black'}} fontSize="md">
             Ver tienda
           </Text>
         </Link>

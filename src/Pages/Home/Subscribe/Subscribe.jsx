@@ -34,7 +34,13 @@ const Subscribe = () => {
         </HStack>
       </HStack>
       <SubsHeader>
-        <Grid gridTemplateColumns="repeat(auto-fill,minmax(325px,1fr))" gap={2}>
+        <Grid
+          gridTemplateColumns={{
+            base: "none",
+            md: "repeat(auto-fill,minmax(325px,1fr))",
+          }}
+          gap={2}
+        >
           {dataSubscribe.map((element) => (
             <SubsBenefits key={element.key} props={element} />
           ))}

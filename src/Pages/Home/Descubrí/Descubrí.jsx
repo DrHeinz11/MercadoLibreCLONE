@@ -4,7 +4,15 @@ import Card from "./components/Card";
 
 const Descubrí = () => {
   return (
-    <Grid my='10' gap='2' gridTemplateColumns="repeat(auto-fit,minmax(330px,1fr))" w='full'>
+    <Grid
+      my="10"
+      gap="2"
+      gridTemplateColumns={{
+        base: "none",
+        md: "repeat(auto-fit,minmax(330px,1fr))",
+      }}
+      w="full"
+    >
       <Card
         urlImg="https://http2.mlstatic.com/D_NQ_627055-MLA51835193577_102022-C.webp"
         topHeading={"para tu mamá tecnológica"}
@@ -15,7 +23,6 @@ const Descubrí = () => {
         topHeading={"para que mamá se luzca"}
         heading="hasta 35% off y 6x sin interés"
       />
-
     </Grid>
   );
 };

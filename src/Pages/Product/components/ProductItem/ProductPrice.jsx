@@ -16,7 +16,7 @@ const ProductPrice = ({ price = 1000, description, children }) => {
       position="relative"
       top="-13px"
       bg="#fff"
-      margin="0 !important"
+      borderBottomRadius={'md'}
     >
       {/* <Text postition='absolute' as="s">{parsePrice(prevPrice)}</Text> */}
       <HStack>
