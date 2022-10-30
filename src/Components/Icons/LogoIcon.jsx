@@ -16,8 +16,8 @@ const LogoIcon = () => {
           y2="0.683"
           gradientUnits="objectBoundingBox"
         >
-          <stop offset="0" stop-color="#e456fa" />
-          <stop offset="1" stop-color="#2b4c7d" />
+          <stop offset="0" stopColor="#e456fa" />
+          <stop offset="1" stopColor="#2b4c7d" />
         </linearGradient>
       </defs>
       <g id="Grupo_4" data-name="Grupo 4" transform="translate(1368 -815.495)">
@@ -34,9 +34,9 @@ const LogoIcon = () => {
 Market"
           transform="translate(-1314 850)"
           fill="#fff"
-          font-size="19"
-          font-family="Poppins-SemiBold, Poppins"
-          font-weight="600"
+          fontSize="19"
+          fontFamily="Poppins-SemiBold, Poppins"
+          fontWeight="600"
         >
           <tspan x="-20.596" y="0">
             Free

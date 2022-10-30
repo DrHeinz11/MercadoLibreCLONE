@@ -9,10 +9,11 @@ const Carrousel = () => {
   ];
 
   return (
-    <Box w="full" h="50vh" spacing={"none"}>
+    <Box w="full" spacing={"none"} margin="0 !important">
       <Img
-        boxSize="full"
-        objectPosition={"center"}
+        w="full"
+        h="75vh"
+        objectPosition={"0 -2.5rem"}
         objectFit="cover"
         src={dataImage[0]}
         alt="Carrousel"
