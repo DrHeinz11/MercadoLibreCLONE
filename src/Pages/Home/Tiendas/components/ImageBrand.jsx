@@ -1,9 +1,11 @@
 import { Image, Link } from "@chakra-ui/react";
+import handleScrollToTop from "../../../../utils/handleScrollToTop";
 
 const ImageBrand = ({ imgBrand, imgBrandAtl }) => {
   return (
     <Link href={`/products/${imgBrand}`}>
       <Image
+      onClick={handleScrollToTop}
         _hover={{ boxShadow: "md" }}
         position="absolute"
         left="0"

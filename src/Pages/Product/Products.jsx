@@ -1,4 +1,4 @@
-import { Heading, HStack, Image, Stack, Text } from "@chakra-ui/react";
+import { Heading, HStack, Image } from "@chakra-ui/react";
 import { useState } from "react";
 import { dataCardBrand } from "../../Constant";
 import ProductDescription from "./components/ProductDescription";
