@@ -16,7 +16,6 @@ const Carrousel = () => {
 
   return (
     <chakra.picture w="full" margin="0 !important">
-      <chakra.source srcSet={dataImage.bgSmall} media="(max-width: 600px)" />
       <Image
         w="full"
         blockSize="auto"
@@ -24,6 +23,7 @@ const Carrousel = () => {
         src={dataImage.bgLarge}
         alt="Carrousel"
       />
+      <chakra.source srcSet={dataImage.bgSmall} media="(max-width: 600px)" />
     </chakra.picture>
   );
 };
