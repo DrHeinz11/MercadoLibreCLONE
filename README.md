@@ -35,6 +35,10 @@ Access my site at [FreeMarket](https://freemarket-clone.netlify.app/)
 
 ![Mercadolibre-Clone](https://user-images.githubusercontent.com/96245472/198860349-3880b467-8d17-4a87-a19e-8ecccecdcec8.png)
 
+##### Product Page
+
+![Mercadolibre-Clone-card](https://user-images.githubusercontent.com/96245472/199402104-cdcb5cdc-b7ed-48f6-9f17-3b40b7bf2b0a.png)
+
 
 ## Technologies
 
