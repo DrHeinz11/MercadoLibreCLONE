@@ -23,7 +23,9 @@ const ProductDescription = ({ description, price, shipping, id }) => {
       boxShadow="md"
       bg="#fff"
       p="4"
-      maxW={{ base: "full", md: "22rem" }}
+      w='full'
+      minW='22rem'
+      
       gap="2"
     >
       <HStack spacing="2" fontSize="sm" color="ml.greyAlpha">

@@ -19,8 +19,10 @@ const ProductsAll = ({ params }) => {
         w="full"
         h="35vh"
         margin='0 !important'
+        objectFit='cover'
+        objectPosition={{base:'-9rem 0',sm:'0 0'}}
       />
-      <HStack w="full" alignItems="flex-start" p='4'>
+      <HStack justifyContent='center' w="full" alignItems="flex-start" p='4'flexWrap={{base:'wrap',md:'nowrap'}} gap='4'>
         <Box>
           <Image
             boxSize="8rem"

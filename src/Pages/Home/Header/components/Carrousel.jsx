@@ -20,10 +20,10 @@ const Carrousel = () => {
         w="full"
         blockSize="auto"
         maxHeight="65vh"
-        src={dataImage.bgLarge}
+        src={dataImage.bgSmall}
         alt="Carrousel"
       />
-      <chakra.source srcSet={dataImage.bgSmall} media="(max-width: 600px)" />
+      <chakra.source objectFit='cover' height="100px" srcSet={dataImage.bgLarge} media="(min-width: 600px)" />
     </chakra.picture>
   );
 };

@@ -1,4 +1,4 @@
-import { Heading, HStack, Image } from "@chakra-ui/react";
+import { Grid, Heading, HStack, Image, chakra, Stack } from "@chakra-ui/react";
 import { useState } from "react";
 import { dataCardBrand } from "../../Constant";
 import ProductDescription from "./components/ProductDescription";
@@ -22,36 +22,48 @@ const Products = ({ params }) => {
   return (
     <>
       {dataResult?.map((element) => (
-        <HStack
-          margin={"0 !important"}
-          spacing="none"
-          gap="4"
-          key={element.id}
+        <Grid
+          gridTemplateColumns={{ base: "none", md: "1fr .5fr" }}
+          gridAutoRows={"auto"}
           w="full"
-          justifyContent="center"
-          alignItems="flex-start"
-          p={{ base: 0, md: 10 }}
-          flexWrap="wrap"
-          bg="#fafafa"
-          minH="75vh"
+          p={{ base: 1, md: 2, lg: 4 }}
+          gap="2"
         >
-          <ProductIcon icons={element.icons} />
-          <Image
-            maxW="41rem"
-            h={{ base: "18rem", md: "25rem" }}
-            w="full"
-            objectFit="contain"
-            src={element.imgUrl}
-            alt={element.iconThumbnailAlt}
-          />
+          <Stack
+            spacing="none"
+            direction="row"
+            flexWrap="wrap"
+            alignContent="flex-start"
+            justifyContent="center"
+            gap="4"
+            bg="#fff"
+            px="2"
+            py="4"
+            borderRadius="lg"
+          >
+            <chakra.figure
+              order={{ base: 0, md: 2 }}
+              w={{ base: "full", lg: "700px" }}
+              maxW="500px"
+              minW="350px"
+            >
+              <Image
+                w="full"
+                objectFit="cover"
+                src={element.imgUrl}
+                alt={element.iconThumbnailAlt}
+              />{" "}
+            </chakra.figure>
+            <ProductIcon icons={element.icons} />
+          </Stack>
           <ProductDescription
             id={element.id}
             iconUrl={element.iconThumbnailUrl}
             price={element.price}
             description={element.description}
             shipping={element.shipping}
-          />
-        </HStack>
+          />{" "}
+        </Grid>
       ))}
     </>
   );
